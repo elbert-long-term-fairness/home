@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Project page for ICML 2024">
+  <meta property="og:title" content="Adapting Static Fairness to Sequential Decision-Making: Bias Mitigation Strategies towards Equal Long-term Benefit Rate" />
+  <meta property="og:description" content="Project page for ICML 2024" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/framework.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="Adapting Static Fairness to Sequential Decision-Making: Bias Mitigation Strategies towards Equal Long-term Benefit Rate">
+  <meta name="twitter:description" content="Project page for ICML">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/framework.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="fairness; reinforcement learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Adapting Static Fairness to Sequential Decision-Making: Bias Mitigation Strategies towards Equal Long-term Benefit Rate</title>
+  <link rel="icon" type="image/x-icon" href="static/images/fair.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <!--
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  -->
+  <script type="text/javascript" src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+  </script>
+  <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="text-content" style="text-align: left; margin-bottom: 10px;">
+        <p><a href="index.html" target="_self">[PC]</a> <a href="m_index.html" target="_self">[Mobile]</a>
+        </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-3 publication-title">Adapting Static Fairness to Sequential Decision-Making: Bias
+              Mitigation Strategies towards Equal Long-term Benefit Rate</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yuancheng-xu.github.io" target="_blank">Yuancheng Xu</a><sup>1*</sup>,</span>
+              <span class="author-block">
+                <a href="" target="_blank">Chenghao Deng</a><sup>1*</sup>,</span>
+              <span class="author-block">
+                <a href="https://ycsun2017.github.io" target="_blank">Yanchao Sun</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://ruijiezheng.com" target="_blank">Ruijie Zheng</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://si0wang.github.io" target="_blank">Xiyao Wang</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://jyzhao.net" target="_blank">Jieyu Zhao</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://furong-huang.com" target="_blank">Furong Huang</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">University of Maryland, College
+                Park<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;University of Southern California<sup>2</sup><br>ICML
+                2024</span>
+              <span class="eql-cntrb"><small><small><small><br><sup>*</sup>Equal
+                      Contribution</small></small></small></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://openreview.net/pdf/7e2fb23e18795f818634d1893092e0a5f4216317.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <!--
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+                  -->
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/umd-huang-lab/ELBERT.git" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Twitter link -->
+                <span class="link-block">
+                  <a href="https://x.com/furongh/status/1714907795684741446" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                    <span>X (twitter)</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2309.03426" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <!--<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section>-->
+  <!-- End teaser video -->
+
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Decisions made by machine learning models can have lasting impacts, making long-term fairness a critical
+              consideration.
+              It has been observed that ignoring the long-term effect and directly applying fairness criterion in static
+              settings can actually worsen bias over time.
+              To address biases in sequential decision-making, we introduce a long-term fairness concept named
+              <i><b>E</b>qual <b>L</b>ong-term <b>BE</b>nefit <b>R</b>a<b>T</b>e</i> (ELBERT).
+              This concept is seamlessly integrated into a Markov Decision Process (MDP) to consider the future effects
+              of actions on long-term fairness, thus providing a unified framework for fair sequential decision-making
+              problems.
+              ELBERT effectively addresses the temporal discrimination issues found in previous long-term fairness
+              notions.
+              Additionally, we demonstrate that the policy gradient of Long-term Benefit Rate can be analytically
+              simplified to standard policy gradients.
+              This simplification makes conventional policy optimization methods viable for reducing bias, leading to
+              our bias mitigation approach ELBERT-PO.
+              Extensive experiments across various diverse sequential decision-making environments consistently reveal
+              that ELBERT-PO significantly diminishes bias while maintaining high utility.
+              Code is available at <a
+                href="https://github.com/umd-huang-lab/ELBERT">https://github.com/umd-huang-lab/ELBERT</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- Motivation -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h3 class="title is-4">Motivation</h3>
+
+        <div class="text-context" style="text-align: left; margin-bottom: 30px;">
+          <p>
+            Directly imposing static fairness constraints without considering future effects of the current
+            action/decision can actually exacerbate bias in the long run.
+            To explicitly address it, recent efforts formulate the long-term effects of actions/decisions in each time
+            step, in terms of both utility and fairness, using the framework of Markov Decision Process (MDP).
+          </p>
+        </div>
+
+        <div class="text-context" style="text-align: left; margin-bottom: 30px;">
+          <p>
+            The predominant long-term fairness notion models long-term bias by estimating the accumulation of step-wise
+            biases in the future.
+            This is a <b>ratio-before-aggregation</b> fairness notion, which aggregates bias of ratios at each time
+            step.
+            An illustrative example is shown in the figure, concerning a loan application scenario where the bank aims
+            to maximize profit while ensuring demographic parity.
+            The result suggests unbiased sequential decisions.
+          </p>
+        </div>
+
+        <div class="item" style="margin-bottom: 30px; text-align: center;"> <!-- Centering the content -->
+          <!-- Second image resized -->
+          <img src="static/images/motivation0.png" alt="motivation0"
+            style="width: 100%; display: block; margin: auto;" /> <!-- Adjust width as needed -->
+        </div>
+
+        <div class="text-context" style="text-align: left; margin-bottom: 30px;">
+          <p>
+            However, the ratio-before-aggregation notion inadvertently leads to temporal discrimination.
+            This occurs within the same group, where decisions made for individuals at different time steps carry
+            unequal importance in terms of characterizing the long-term unfairness.
+            Consider the following two scenarios, which are almost identical except for the reversal of approvals for
+            the red group at two time steps.
+            Under the previous ratio-before-aggregation notions, the long-term bias is zero for trajectory A and
+            non-zero for trajectory B.
+            Therefore, the bank prefers A over B and thus inadvertently favors approving red applicants at time $t+1$
+            over red applicants at time $t$, thereby causing discrimination.
+          </p>
+        </div>
+
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item" style="text-align: center;"> <!-- Centering the content -->
+            <img src="static/images/motivation1.png" alt="motivation1"
+              style="width: 100%; display: block; margin: auto;" /> <!-- Adjust width as needed -->
+            <p class="subtitle has-text-centered">
+              <small>
+                Ratio-before-aggregation metric leads to temproal discrimination.
+              </small>
+            </p>
+          </div>
+          <div class="item" style="text-align: center;"> <!-- Centering the content -->
+            <img src="static/images/motivation2.png" alt="motivation2"
+              style="width: 100%; display: block; margin: auto;" /> <!-- Adjust width as needed -->
+            <p class="subtitle has-text-centered">
+              <small>
+                Ratio-after-aggregation metric avoids temproal discrimination.
+              </small>
+            </p>
+          </div>
+        </div>
+
+        <div class="text-context" style="text-align: left; margin-bottom: 30px;">
+          <p>
+            To address the issue of temporal discrimination, we refer to a <b>ratio-after-aggregation</b> metric.
+            This metric considers the overall acceptance rate across time, which is the total number of approved loan
+            over time normalized by the total number of applicants.
+            Since the decisions are aggregated before normalizing with the total number of applications.
+            Therefote, in terms of fairness, there is no distinction between allocating approval to an red applicant at
+            time $t$ and at time $t+1$, avoiding the issue of temporal discrimination.
+          </p>
+        </div>
+
+      </div>
+  </section>
+  <!-- Motivation -->
+
+  <!-- ELBERT -->
+  <section class="hero teaser is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h3 class="title is-4">ELBERT: Equal Long-term Benefit Rate</h3>
+
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+          <p>To generally adapt static group fairness notions to sequential settings in the ratio-after-aggregation
+            manner, we introduce Equal Long-term Benefit Rate (ELBERT).
+            As a unified framework, it is based on standard MDP formulation with immediate group supply and immediate
+            group demand, which is formalized as the Supply-Demand MDP (SD-MDP).
+          </p>
+        </div>
+
+        <div class="item" style="margin-bottom: 30px; text-align: center;"> <!-- Centering the content -->
+          <!-- Second image resized -->
+          <img src="static/images/sdmdp.png" alt="sdmdp" style="width: 100%; display: block; margin: auto;" />
+          <!-- Adjust width as needed -->
+        </div>
+
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+          <p>With cumulative group supply $\eta_g^S(\pi)$ and cumulative demand $\eta_g^D(\pi)$, we define the Long-tern
+            Benefit Rate of group $g$ as $\eta_g^S(\pi)/\eta_g^D(\pi)$ and define the bias of a policy as the maximal
+            difference of Long-term Benefit Rate among groups.
+          </p>
+        </div>
+
+        <div class="item" style="margin-bottom: 30px; text-align: center;"> <!-- Centering the content -->
+          <!-- Second image resized -->
+          <img src="static/images/elbert0.png" alt="elbert0" style="width: 80%; display: block; margin: auto;" />
+          <!-- Adjust width as needed -->
+        </div>
+
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+          <p>Under the framework of ELBERT, the goal of reinforcement learning with fairness constraints is to find a
+            policy to maximize the cumulative reward and keep the bias under a threshold $\delta$.
+          </p>
+        </div>
+
+        <div class="item" style="margin-bottom: 30px; text-align: center;"> <!-- Centering the content -->
+          <!-- Second image resized -->
+          <img src="static/images/elbert1.png" alt="elbert1" style="width: 65%; display: block; margin: auto;" />
+          <!-- Adjust width as needed -->
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- ELBERT -->
+
+  <!-- ELBERT-PO -->
+  <section class="hero teaser is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h3 class="title is-4">ELBERT-PO</h3>
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+          <p>To solve the constrained problem, we propose to solve its unconstrained problem by maximizing the following
+            objective.
+            Here $\alpha$ is a constant controlling the trade-off between the traditional RL reward and the bias.
+          </p>
+        </div>
+        <div class="item" style="margin-bottom: 40px; text-align: center;"> <!-- Centering the content -->
+          <!-- Second image resized -->
+          <img src="static/images/eqn0.png" alt="eqn0" style="width: 90%; display: block; margin: auto;" />
+          <!-- Adjust width as needed -->
+        </div>
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+          <p><b>Challenge 1: Policy gradient of $b(\pi)$</b> 
+          </p>
+          <p>Policy optimization methods is natural for the objective above.
+            However, how to deal with $\nabla b(\pi)$ is previously unclear because $b(\pi)$ is not of the form of expected total return.
+          </p>
+          <p>
+            To solve this, we first analytically reduce the objective's gradient to standard policy grandents
+          </p>
+        </div>
+        <div class="item" style="margin-bottom: 40px; text-align: center;"> <!-- Centering the content -->
+          <!-- Second image resized -->
+          <img src="static/images/eqn1.png" alt="eqn1" style="width: 90%; display: block; margin: auto;" />
+          <!-- Adjust width as needed -->
+        </div>
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+          <p>Here $h={b(\pi)}^2$ and $\frac{\partial h}{\partial z_g}$ is the partial derivative of h w.r.t its $g$-th coordinate.
+          </p>
+        </di>
+
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+          <p>Then we compute the gradeint of the objective function using advantage functions as follows.
+          </p>
+        </di>
+
+        <div class="item" style="margin-bottom: 40px; text-align: center;"> <!-- Centering the content -->
+          <!-- Second image resized -->
+          <img src="static/images/eqn2.png" alt="eqn2" style="width: 100%; display: block; margin: auto;" />
+          <!-- Adjust width as needed -->
+        </div>
+
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+          <p>In practice, we use PPO with the fairness-aware advantage function to update the policy.
+          </p>
+        </div>
+
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+          <p><b>Challenge 2: Non-smoothness in multi-group bias</b> 
+          </p>
+          <p>When there are multiple groups, the max and min operator in the objective can cause non-smoothness during training.
+            This is problematic especially when there are several other groups with Long-term Benefit Rate close to the maximal or minimal values.
+          </p>
+        </div>
+
+        <div class="item" style="margin-bottom: 40px; text-align: center;"> <!-- Centering the content -->
+          <!-- Second image resized -->
+          <img src="static/images/eqn3.png" alt="eqn3" style="width: 80%; display: block; margin: auto;" />
+          <!-- Adjust width as needed -->
+        </div>
+
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+          <p>To solve this, we replace the max and min operator with their smoothed version controlled by the temperature $\beta>0$ and define the soft bias.
+          </p>
+        </div>
+
+        <div class="item" style="margin-bottom: 40px; text-align: center;"> <!-- Centering the content -->
+          <!-- Second image resized -->
+          <img src="static/images/eqn4.png" alt="eqn4" style="width: 70%; display: block; margin: auto;" />
+          <!-- Adjust width as needed -->
+        </div>
+
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+          <p>The soft bias is an upper bound of the exact bias, and the quality of such approximation is controllable: the gap between the two decreases as $\beta$ increases and vanishes when $\beta\to\infty$.
+          </p>
+        </div>
+
+        <div class="item" style="margin-bottom: 40px; text-align: center;"> <!-- Centering the content -->
+          <!-- Second image resized -->
+          <img src="static/images/alg.png" alt="alg" style="width: 100%; display: block; margin: auto;" />
+          <!-- Adjust width as needed -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- ELBERT-PO -->
+
+  <!-- Experimental Results -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h3 class="title is-4">Experimental Results</h3>
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+          <p>From loan approvals to medical allocations and attention distribution, our simulations show ELBERT-PO
+            consistently achieves the lowest bias among all baselines while maintaining high rewards.
+          </p>
+        </div>
+        <div style="margin-bottom: 80px; text-align: center;">
+          <div class="item item-video1" style="text-align: center;">
+            <video poster="" id="video1" width="100%" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/ELBERT-Experiments.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Experimental Results -->
+
+
+  <!-- Paper poster -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Poster</h2>
+        <div class="item" style="margin-bottom: 30px; text-align: center;"> <!-- Centering the content -->
+          <!-- Second image resized -->
+          <img src="static/images/poster.png" alt="poster" style="width: 100%; display: block; margin: auto;" />
+          <!-- Adjust width as needed -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End paper poster -->
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{xuadapting,
+        title={Adapting Static Fairness to Sequential Decision-Making: Bias Mitigation Strategies towards Equal Long-term Benefit Rate},
+        author={Xu, Yuancheng and Deng, Chenghao and Sun, Yanchao and Zheng, Ruijie and Wang, Xiyao and Zhao, Jieyu and Huang, Furong},
+        booktitle={Forty-first International Conference on Machine Learning}
+      }</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+                target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
